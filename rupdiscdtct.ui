@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RupDiscDtct</class>
+ <widget class="QWidget" name="RupDiscDtct">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RupDiscDtct</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="accessibleName">
+      <string/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="lTab">
+      <attribute name="title">
+       <string>Line</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="LoadWidget" name="lLoad" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="ShowWidget" name="lShow" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="cTab">
+      <attribute name="title">
+       <string>Circle</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="LoadWidget" name="cLoad" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="ShowWidget" name="cShow" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tTab">
+      <attribute name="title">
+       <string>Tools</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LoadWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">loadwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ShowWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">showwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
